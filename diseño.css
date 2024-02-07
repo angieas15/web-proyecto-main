@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+/*variables*/
+
+:root{
+    --colordebotones: #DE928B;
+    --colorprincipal: #E4C764 ;
+    --colordetextos: #6E7173 ;
+    --font-family:'Inconsolata', monospace;
+    ---paddingsecciones: 40px 0;
+    ---margineelementos: 40px;
+}
+
+
+/*contenedor de la pagina*/
+.contenedor{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: var(---paddingsecciones);
+}
+
+/*menu de navegacion*/
+.menu-navegacion{
+    font-family: var(--font-family);
+    display: flex;
+    padding: 0;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    background-color: var(--colorprincipal) ;
+    border-radius: 40px;
+    border: 2px solid var(--colordetextos);
+
+}
+.logo:hover{
+    background-color: var(--colordetextos);
+    border: 2px solid black;
+}
+.enlaces li{
+    list-style: none;
+    display: inline-block;
+}
+.enlaces a{
+    font-size: 20px;
+    color: var(--colordetextos);
+    text-decoration: none;
+    padding: 32px;
+}
+.enlaces a:hover{
+    color: var(--colorprincipal);
+    font-weight: 600;
+
+}
+.enlaces li i{
+    font-size: 40px;
+}
+
+/*footer*/
+footer .redes-sociales  , footer .copy{
+    color: var(--colordetextos);
+    text-align: center;
+}
+.redes-sociales a{
+    text-decoration: none;
+}
+
+.redes-sociales i{
+    color: var(--colordetextos);
+    font-size: 30px;
+    padding: 0 30px;
+}
+.redes-sociales a i:hover{
+    color: var(--colordebotones);
+}
+
+
+/*tarjetas*/
+#tarjetas{
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-family);
+    padding-top: 80px;
+}
+@media screen and (max-width:500px) {
+    
+    #tarjetas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+}
+
+.tarjeta img{
+    width: 100%;
+}
+.tarjeta{
+    width: 30%;
+    margin: 0 30px;
+    padding: 20px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    text-align: center;
+}
+@media screen and (max-width:500px) {
+    .tarjeta{
+        width: 60%;
+        margin: 10px;
+    }  
+}
+
+.tarjeta:hover{
+    border: 2px solid black;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translatey(-3%);
+}
+.tarjeta-nombre{
+    padding-top: 10px;
+}
+.tarjeta a{
+    text-decoration: none;
+    color: var(--colordetextos);
+
+}

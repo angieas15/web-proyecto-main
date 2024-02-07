@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*variables*/
+
+:root{
+    --colorprincipal: #E4C764;
+    --colordetextos: #6E7173 ;
+    --colordebotones: #DE928B;
+    --font-family:'Inconsolata', monospace;
+    ---paddingsecciones: 40px 0;
+    ---margineelementos: 40px;
+}
+
+
+/*contenedor de la pagina*/
+.contenedor{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: var(---paddingsecciones);
+    
+}
+/*contenedor de la pagina*/
+.contenedor{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: var(---paddingsecciones);
+}
+/*menu de navegacion*/
+.menu-navegacion{
+    font-family: var(--font-family);
+    display: flex;
+    padding: 0;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    background-color: var(--colorprincipal) ;
+    border-radius: 40px;
+    border: 2px solid white;
+
+}
+.logo:hover{
+    background-color: var(--colordetextos);
+    border: 2px solid black;
+}
+.enlaces li{
+    list-style: none;
+    display: inline-block;
+}
+.enlaces a{
+    font-size: 20px;
+    color: var(--colordetextos);
+    text-decoration: none;
+    padding: 32px;
+}
+.enlaces a:hover{
+    color: var(--colorprincipal);
+    font-weight: 600;
+
+}
+.enlaces li i{
+    font-size: 40px;
+}
+/*footer*/
+footer .redes-sociales  , footer .copy{
+    color: var(--colordetextos);
+    text-align: center;
+}
+.redes-sociales a{
+    text-decoration: none;
+}
+
+.redes-sociales i{
+    color: var(--colordetextos);
+    font-size: 30px;
+    padding: 0 30px;
+}
+.redes-sociales a i:hover{
+    color: var(--colordebotones);
+}
+
+
+/*sobre mi*/
+.texto-descripcion img{
+    width: 30%;
+}
+.texto-descripcion{
+    display: flex;
+    align-items: center;
+}
+.texto{
+    color: var(--colordetextos);
+    font-family: var(--font-family);
+    padding: 40px;
+}
+
+/*media querys*/
+
+@media screen and (max-width:815px) {
+    .texto-descripcion{
+        display: flex;
+        flex-direction: column;
+    }
+    .texto-descripcion img{
+        width: 40%;
+    }
+    
+}

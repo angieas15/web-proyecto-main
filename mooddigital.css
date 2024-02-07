@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+/*variables*/
+
+:root{
+    --colordebotones: #DE928B;
+    --colorprincipal: #E4C764;
+    --colordeheader: white;
+    --colordetextos: #6E7173 ;
+    --colordemood: #9625A8;
+    --font-family:'Inconsolata', monospace;
+    ---paddingsecciones: 40px 0;
+    ---margineelementos: 40px;
+}
+
+
+/*contenedor de la pagina*/
+.contenedor{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: var(---paddingsecciones);
+
+}
+header{
+    background-color: var(--colordemood);
+    background-image: url(./Mood/titulomood.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+}
+/*menu de navegacion*/
+.menu-navegacion{
+    display: flex;
+    padding: 0;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    background-color: var(--colordetextos);
+    border-radius: 40px;
+    border: 2px solid white;
+
+}
+.logo:hover{
+    background-color: #E4C764;
+    border: 2px solid var(--colordetextos);
+}
+.enlaces li{
+    list-style: none;
+    display: inline-block;
+}
+.enlaces a{
+    font-size: 20px;
+    color: var(--colordeheader);
+    text-decoration: none;
+    padding: 32px;
+}
+.enlaces a:hover{
+    color: var(--colorprincipal);
+    font-weight: 600;
+
+}
+.enlaces li i{
+    font-size: 40px;
+}
+/*footer*/
+footer .redes-sociales  , footer .copy{
+    color: var(--colordetextos);
+    text-align: center;
+}
+.redes-sociales a{
+    text-decoration: none;
+}
+
+.redes-sociales i{
+    font-size: 30px;
+    padding: 0 30px;
+}
+.redes-sociales a i:hover{
+    color: var(--colordebotones);
+}
+
+/*footer*/
+footer .redes-sociales  , footer .copy{
+    color: var(--colordetextos);
+    text-align: center;
+}
+.redes-sociales a{
+    text-decoration: none;
+}
+
+.redes-sociales i{
+    color: var(--colordetextos);
+    font-size: 30px;
+    padding: 0 30px;
+}
+.redes-sociales a i:hover{
+    color: var(--colordebotones);
+}
+
+/*main mood*/
+.descripciones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.descripciones h2{
+    color: var(--colordetextos);
+    font-weight: 600;
+    text-align: center;
+
+}
+.descripciones p{
+    font-weight: 200;
+    font-size: 20px;
+    padding-left: 40px;
+}
+.carrusel img{
+    width: 30%;
+    padding: 15px 0px 4px 0;
+}
+.carrusel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--colordetextos);
+}
+/*mailing mood*/
+.mailing img{
+    width: 30%;
+}
+.correo {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px ;
+    color: var(--colordetextos);
+
+
+}
+.rrss img{
+    width: 40%;
+}
+.rrss{
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
